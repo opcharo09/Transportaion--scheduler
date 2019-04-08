@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Transportation Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+      <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+        <div class="jumbotron">
+            <h1 class="text-center">Train schedule</h1>
+        </div>
+
+         <div class="container">
+                <div class="row">
+                  <div class="col-sm" ><h3> Train number</h3><id="name-display"> </div>
+                  <div class="col-sm" ><h3>Destination</h3><id="destination-display"></div>
+                  <div class="col-sm" ><h3>First Train</h3><id="first-flight-display"></div>
+                  <div class="col-sm" ><h3>Next Train</h3><id="next-flight-display"></div>
+                  <div class="col-sm" ><h3>Frequency Display</h3><id="frequency-display"></div>
+                </div>
+         </div>
+    
+         <div class="container">
+                <br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-default">
+                            <div class="card-header">
+                                Add Train
+                            </div>
+                            <div class="input-table">
+        
+                                <form>
+                                    <div class="form-info ">
+                                        <label for="number-input">Train number</label>
+                                        <input class="form-control" id="name-input" type="text">
+                                    </div>
+                                    <div class="form-info ">
+                                        <label for="destination-input">Destination</label>
+                                        <input class="form-control" id="destination-input" type="text">
+                                    </div>
+                                    <div class="form-info">
+                                        <label for="first-train-input">First train Time(HH:mm-military time)</label>
+                                        <input class="form-control" id="first-train-input" type="time">
+                                    </div>
+                                
+                                    <div class="form-info">
+                                        <label for="frequency-input">Frequency(min)</label>
+                                        <input class="form-control" id="frequency-input" type="time">
+                                    </div>
+                                    <input type="submit" name="submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+        
+    
+    
+      
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
