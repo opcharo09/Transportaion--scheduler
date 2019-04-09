@@ -1,0 +1,37 @@
+.jumbotron{
+    color: blue;
+    
+}
+img{
+    width: 500px;
+    height: 200px;
+    margin-left: 515px;
+    margin-top: -50px;
+}
+body{
+    background: teal;
+}
+.sidenav{
+width: 1400px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-header{
+    font-size: 25px;
+    border: 2px solid black;
+}
+.form-info{
+    background:rgb(38, 148, 87);
+    font-size: 20px;
+    border: 2px solid black;
+
+}
+input{
+    background: rgb(192, 169, 36);
+    width: 200px;
+    border: 4px solid black;
+}
+
+.container{
+    border: 2px solid goldenrod;
+    background: whitesmoke;
+}
