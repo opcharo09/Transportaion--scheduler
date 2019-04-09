@@ -7,23 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
-      <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+      <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 <body>
         <div class="jumbotron">
             <img src="./assets/pictures/hous.jpg">
-                <h1 class="text-center">Houston Metro Bullet Express<br>Train schedule</h1>
+                <h1 class="text-center">Houston Metro Bullet Express</h1>
+                <h2 class= "text-center">Train schedule</h2>
         </div>
 
          <div class="container">
-                <div class="row">
-                  <div class="col-sm-4" ><p>Train number</p><id="train-number"> </div>
-                  <div class="col-sm-2" ><p>Destination</p><id="destination"></div>
-                  <div class="col-sm-2" ><p>Frequency</p><id="frequency"></div>
-                  <div class="col-sm-2" ><p>Next Train Arriving</p><id="next-train-arriving"></div>
-                  <div class="col-sm-2" ><p>Minutes away</p><id="minutes-away"></div>
-                </div>
+           <div class="row">
+               <div class="card-header-2">Current Trains Schedule</div>
+                <table class="table table-sm table-hover" id=train-table>
+                 <thead> 
+                   <tr> 
+                    <th scope="col" >Train number </th>
+                    <th scope="col" >destination</th>
+                    <th scope="col" >Frequency</th>
+                    <th scope="col" >Next Train Arriving</th>
+                    <th scope="col" >Minutes away</th>
+                   </tr>
+                </thead>
+                <tbody>
+                 </tbody> 
+                </table>
+            </div>
          </div>
     
                 
@@ -38,7 +48,7 @@
                                 <form>
                                     <div class="form-info ">
                                         <label for="number-input">Train number</label>
-                                        <input class="form-control" id="name-input" type="text">
+                                        <input class="form-control" id="number-input" type="text">
                                     </div>
                                     <div class="form-info ">
                                         <label for="destination-input">Destination</label>
@@ -50,14 +60,16 @@
                                     </div>
                                 
                                     <div class="form-info">
-                                        <label for="frequency-input">Frequency(min)</label>
+                                        <label for="frequency-input">Frequency(min:sec)</label>
                                         <input class="form-control" id="frequency-input" type="time">
                                     </div>
+                           
                                     <input type="submit" name="submit">
                                 </form>
                             </div>
-                        </div>
+                         </div>
                     </div>
+                </div>
         
     
     

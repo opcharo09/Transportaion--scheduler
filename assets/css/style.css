@@ -7,6 +7,7 @@ img{
     height: 200px;
     margin-left: 515px;
     margin-top: -50px;
+    position: relative;
 }
 body{
     background: teal;
@@ -17,12 +18,15 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .card-header{
     font-size: 25px;
-    border: 2px solid black;
+    border: 4px solid black;
+}
+.card-header-2{
+    font-size: 20px;
 }
 .form-info{
     background:rgb(38, 148, 87);
     font-size: 20px;
-    border: 2px solid black;
+    border: 4px solid black;
 
 }
 input{
@@ -32,6 +36,6 @@ input{
 }
 
 .container{
-    border: 2px solid goldenrod;
+    border: 4px solid goldenrod;
     background: whitesmoke;
 }
