@@ -29,10 +29,11 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 4px solid black;
 
 }
-input{
+.btn-primary{
     background: rgb(192, 169, 36);
     width: 200px;
     border: 4px solid black;
+    color: black;
 }
 
 .container{
